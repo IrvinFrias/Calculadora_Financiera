@@ -68,21 +68,21 @@
             <div class="form__box">
                 <h3 class="form__title">Capital</h3>
                 <label>
-                    <input class="form__input" type="text" placeholder="Monto" data-form-capital>
+                    <input class="form__input" type="number" min="0" placeholder="Monto" data-form-capital>
                 </label>
             </div>
 
             <div class="form__box">
                 <h3 class="form__title">Plazo del prestamo</h3>
                 <label>
-                    <input class="form__input" type="text" placeholder="Meses" data-form-meses >
+                    <input class="form__input" type="number" min="1" max="1200" placeholder="Meses" data-form-meses >
                 </label>
             </div>
 
             <div class="form__box">
                 <h3 class="form__title">Tasa de Interés Anual</h3>
                 <label>
-                    <input class="form__input" type="text" placeholder="% Tasa" data-form-tasa>
+                    <input class="form__input" type="number" min="0"  placeholder="% Tasa" data-form-tasa>
                 </label>
             </div>
         </form>
