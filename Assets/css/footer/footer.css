@@ -5,3 +5,10 @@
     background: #0B2B40;
     height: 5rem;
 }
+@media only screen and (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+        width: 100%;
+        height: 7rem;
+    }
+}

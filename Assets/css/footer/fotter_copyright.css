@@ -2,3 +2,9 @@
     color: white;
     font-size: .9rem;
 }
+@media only screen and (max-width: 600px) {
+    .fotter_copyright{
+        font-size: 0.8rem;
+
+    }
+}
