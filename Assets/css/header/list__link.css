@@ -1,0 +1,9 @@
+.list__link{
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+.list__link:hover{
+    color: #3B8C6E ;
+}

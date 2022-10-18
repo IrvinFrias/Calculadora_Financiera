@@ -1,0 +1,11 @@
+.footer__list--link{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #3B8C6E;
+    font-size: .9rem;
+
+}
+.footer__list--link:hover{
+
+    color: white;
+}

@@ -1,0 +1,6 @@
+.nav__list{
+    display: flex;
+    width: 75rem;
+    margin: 0 auto;
+    padding: .5rem 0 .5rem 0;
+}

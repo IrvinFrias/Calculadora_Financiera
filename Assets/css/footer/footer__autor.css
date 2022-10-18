@@ -1,0 +1,7 @@
+.footer__autor{
+    text-decoration: none;
+    color: white;
+}
+.footer__autor:hover{
+    color: #3B8C6E;
+}
