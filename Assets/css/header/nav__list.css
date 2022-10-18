@@ -4,3 +4,11 @@
     margin: 0 auto;
     padding: .5rem 0 .5rem 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .nav__list{
+        padding: 2rem;
+
+
+    }
+}

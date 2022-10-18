@@ -6,6 +6,10 @@
 
 }
 .footer__list--link:hover{
-
     color: white;
+}
+@media only screen and (max-width: 600px) {
+    .footer__list--link{
+
+    }
 }

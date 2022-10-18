@@ -4,3 +4,8 @@
     padding-top: 2rem;
 
 }
+@media only screen and (max-width: 600px) {
+    .form__send{
+        padding: 2rem;
+    }
+}

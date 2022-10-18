@@ -2,3 +2,8 @@
     margin: 0 auto 4rem;
     width: 75rem;
 }
+@media only screen and (max-width: 600px) {
+    .total{
+        padding-left: 2rem;
+    }
+}
