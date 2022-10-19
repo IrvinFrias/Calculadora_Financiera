@@ -1,6 +1,7 @@
 import {data} from "./services/datosBasicosCliente.js";
 import {CalculadoraDeInteres} from "./services/CalculadoraDeInteres.js";
 
+
 const btnSend = document.querySelector(".btn__send");
 
 const calcularInteres = (evento) => {
@@ -9,7 +10,7 @@ const calcularInteres = (evento) => {
     const dataObj = data();
     const interes = CalculadoraDeInteres.interesSimple(dataObj.capital, dataObj.meses, dataObj.tasa);
     const total = document.querySelector(".total__monto");
-    total.innerHTML = ` $ ${interes + dataObj.capital} `;
+    total.innerHTML = ` $ ${(interes + dataObj.capital).toFixed(2)} `;
 
 }
 

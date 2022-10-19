@@ -12,21 +12,21 @@ const calcularInteresCompuesto = (evento) => {
 
     if (frecuenciaCapi === 1){
         let interes = CalculadoraDeInteres.interesCompuestoAnual(dataObj.capital, dataObj.meses, dataObj.tasa);
-        total.innerHTML = ` $ ${interes} `;
+        total.innerHTML = ` $ ${interes.toFixed(2)} `;
     }else if(frecuenciaCapi === 2) {
         let interes = CalculadoraDeInteres.interesCompuestoSemestral(dataObj.capital, dataObj.meses, dataObj.tasa);
-        total.innerHTML = ` $ ${interes} `;
+        total.innerHTML = ` $ ${interes.toFixed(2)} `;
     }else if(frecuenciaCapi === 3){
         let interes = CalculadoraDeInteres.interesCompuestoTrimestral(dataObj.capital, dataObj.meses, dataObj.tasa);
-        total.innerHTML = ` $ ${interes} `;
+        total.innerHTML = ` $ ${interes.toFixed(2)} `;
 
     }else if(frecuenciaCapi === 4){
         let interes = CalculadoraDeInteres.interesCompuestoMensual(dataObj.capital, dataObj.meses, dataObj.tasa);
-        total.innerHTML = ` $ ${interes} `;
+        total.innerHTML = ` $ ${interes.toFixed(2)} `;
 
     }else if(frecuenciaCapi === 5){
         let interes = CalculadoraDeInteres.interesCompuestoDiariamente(dataObj.capital, dataObj.meses, dataObj.tasa);
-        total.innerHTML = ` $ ${interes} `;
+        total.innerHTML = ` $ ${interes.toFixed(2)} `;
 
     }
 
