@@ -1,20 +1,15 @@
+import {data} from "./services/datosBasicosCliente.js";
+import {CalculadoraDeInteres} from "./services/CalculadoraDeInteres.js";
+
 const btnSend = document.querySelector(".btn__send");
 
 const calcularInteres = (evento) => {
     evento.preventDefault();
-    const capitalHTML = document.querySelector("[data-form-capital]");
-    const capital = parseFloat(capitalHTML.value);
-    const mesesHTML = document.querySelector("[data-form-meses]");
-    const meses = parseFloat(mesesHTML.value);
-    const tasaHTML = document.querySelector("[data-form-tasa]");
-    const tasa = parseFloat(tasaHTML.value);
-    const interes = capital * (tasa/(100*12)*meses);
-    const total = document.querySelector(".total__monto");
-    total.innerHTML = ` $ ${interes + capital} `;
 
-    capitalHTML.value = "";
-    mesesHTML.value = "";
-    tasaHTML.value = "";
+    const dataObj = data();
+    const interes = CalculadoraDeInteres.interesSimple(dataObj.capital, dataObj.meses, dataObj.tasa);
+    const total = document.querySelector(".total__monto");
+    total.innerHTML = ` $ ${interes + dataObj.capital} `;
 
 }
 

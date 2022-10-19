@@ -1,11 +1,14 @@
 .form__send{
+    display: flex;
     margin: 0 auto;
     width: 75rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 @media only screen and (max-width: 600px) {
     .form__send{
-        padding: 2rem;
+        flex-direction: column;
+        padding: 0  2rem 0 2rem;
     }
 }

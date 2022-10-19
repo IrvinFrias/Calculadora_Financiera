@@ -4,3 +4,9 @@
     color: #0B2B40;
     font-weight: 550;
 }
+
+@media only screen and (max-width: 600px) {
+    .send__title{
+        padding-top: 2rem;
+    }
+}

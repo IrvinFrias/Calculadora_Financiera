@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Esencial para usar medias querys-->
+        <link rel="shortcut icon" href="Assets/img/Coin.svg">
         <title>Calculadora Financiera | Básica</title>
         <!--Reset -->
         <link href="Assets/css/reset.css" rel="stylesheet">
@@ -50,69 +51,70 @@
     </head>
 
     <body>
-    <header class="header">
-        <div class="header__one"><h1 class="header__mainTitle">Calculadora Financiera</h1></div>
-        <div class="header_two"> <nav class="nav">
-            <ul class="nav__list">
-                <li class="list__item"> <a class="list__link" href="#"> Interés simple</a></li>
-                <li class="list__item"> <a class="list__link" href="#"> Interés complejo</a></li>
+        <header class="header">
+            <div class="header__one"><h1 class="header__mainTitle">Calculadora Financiera</h1></div>
+            <div class="header_two"> <nav class="nav">
+                <ul class="nav__list">
+                    <li class="list__item"> <a class="list__link" href="index.html" target="_top"> Interés simple</a></li>
+                    <li class="list__item"> <a class="list__link" href="Interes_Compuesto/interesCompuesto.html"> Interés compuesto</a></li>
+                </ul>
+            </nav></div>
+        </header>
+        <main class="main">
+            <div class="interes__title">
+                <h2 class="title">Interés Simple</h2>
+            </div>
+            <form class="form">
+                <div class="form__box">
+                    <h3 class="form__title">Capital</h3>
+                    <label>
+                        <input class="form__input" type="number" min="0" placeholder="Monto" autofocus data-form-capital>
+                    </label>
+                </div>
+
+                <div class="form__box">
+                    <h3 class="form__title">Plazo del prestamo</h3>
+                    <label>
+                        <input class="form__input" type="number" min="1" max="1200" placeholder="Meses" data-form-meses >
+                    </label>
+                </div>
+
+                <div class="form__box">
+                    <h3 class="form__title">Tasa de Interés Anual</h3>
+                    <label>
+                        <input class="form__input" type="number" min="0"  placeholder="% Tasa" data-form-tasa>
+                    </label>
+                </div>
+            </form>
+            <div class="form__send">
+                <div>
+                    <h3 class="send__title">Calcular</h3>
+                    <input class="btn__send" type="submit" placeholder="Enviar">
+                </div>
+
+            </div>
+            <div class="total">
+                <h3 class="total__title">Monto total a pagar</h3>
+                <h4 class="total__monto">Total</h4>
+            </div>
+            <div class="disclaimer"><h5 class="disclaimer__message">**Para obtener un texto normal, las sustituciones aleatorias por sí solas no
+                son suficientes: se necesitan redes neuronales. Texto aleatorio para llenar sitios de prueba y diseños.</h5></div>
+        </main>
+        <footer class="footer">
+            <ul class="footer_list">
+                <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad |</a></li>
+                <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad |</a></li>
+                <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad</a></li>
             </ul>
-        </nav></div>
-    </header>
 
-    <main class="main">
-        <div class="interes__title">
-            <h2 class="title">Interés Simple</h2>
-        </div>
-        <form class="form">
-            <div class="form__box">
-                <h3 class="form__title">Capital</h3>
-                <label>
-                    <input class="form__input" type="number" min="0" placeholder="Monto" data-form-capital>
-                </label>
-            </div>
+            <h5 class="fotter_copyright">&copy;Todos los derechos reservados, 2022, CDMX,
+               <a  class="footer__autor" href="https://www.linkedin.com/in/irvin-fernando-frias-torres-714527245/" target="_blank"
+               >Irvin
+                   Fernando
+                   Frías Torres
+                   .</a> </h5>
 
-            <div class="form__box">
-                <h3 class="form__title">Plazo del prestamo</h3>
-                <label>
-                    <input class="form__input" type="number" min="1" max="1200" placeholder="Meses" data-form-meses >
-                </label>
-            </div>
-
-            <div class="form__box">
-                <h3 class="form__title">Tasa de Interés Anual</h3>
-                <label>
-                    <input class="form__input" type="number" min="0"  placeholder="% Tasa" data-form-tasa>
-                </label>
-            </div>
-        </form>
-        <div class="form__send">
-            <h3 class="send__title">Calcular</h3>
-            <input class="btn__send" type="submit" placeholder="Enviar">
-        </div>
-        <div class="total">
-            <h3 class="total__title">Monto total a pagar</h3>
-            <h4 class="total__monto">Total</h4>
-        </div>
-        <div class="disclaimer"><h5 class="disclaimer__message">**Para obtener un texto normal, las sustituciones aleatorias por sí solas no
-            son suficientes: se necesitan redes neuronales. Texto aleatorio para llenar sitios de prueba y diseños.</h5></div>
-    </main>
-
-    <footer class="footer">
-        <ul class="footer_list">
-            <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad |</a></li>
-            <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad |</a></li>
-            <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad</a></li>
-        </ul>
-
-        <h5 class="fotter_copyright">&copy;Todos los derechos reservados, 2022, CDMX,
-           <a  class="footer__autor" href="https://www.linkedin.com/in/irvin-fernando-frias-torres-714527245/" target="_blank"
-           >Irvin
-               Fernando
-               Frías Torres
-               .</a> </h5>
-
-    </footer>
+        </footer>
     </body>
-    <script src="App.js"></script>
+    <script  type="module" src="App.js"></script>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+        <link rel="shortcut icon" href="../Assets/img/Coin.svg">
+        <title>Calculadora Financiera | Básica</title>
+
+        <!-- sources -->
+        <link rel="stylesheet" href="https://use.typekit.net/uju7cxu.css">
+
+        <!--Reset -->
+        <link href="../Assets/css/reset.css" rel="stylesheet">
+
+        <link href="interesCompuesto.css" rel="stylesheet">
+
+        <!--Header -->
+        <link href="../Assets/css/header/header__one.css" rel="stylesheet">
+        <link href="../Assets/css/header/header__mainTitle.css" rel="stylesheet">
+        <link href="../Assets/css/header/header_two.css" rel="stylesheet">
+        <link href="../Assets/css/header/nav__list.css" rel="stylesheet">
+        <link href="../Assets/css/header/list__link.css" rel="stylesheet">
+
+
+        <!--Main -->
+        <link href="../Assets/css/main/main.css" rel="stylesheet">
+        <link href="../Assets/css/main/interes__title.css" rel="stylesheet">
+        <link href="../Assets/css/main/title.css" rel="stylesheet">
+
+        <!--Main/ Form -->
+        <link href="../Assets/css/form/form.css" rel="stylesheet">
+        <link href="../Assets/css/form/form__box.css" rel="stylesheet">
+        <link href="../Assets/css/form/form__title.css" rel="stylesheet">
+        <link href="../Assets/css/form/form__input.css" rel="stylesheet">
+        <link href="../Assets/css/form/form__send.css" rel="stylesheet">
+        <link href="../Assets/css/form/send__title.css" rel="stylesheet">
+        <link href="../Assets/css/form/btn__send.css" rel="stylesheet">
+        <link href="../Assets/css/form/total.css" rel="stylesheet">
+        <link href="../Assets/css/form/total__title.css" rel="stylesheet">
+        <link href="../Assets/css/form/total__monto.css" rel="stylesheet">
+        <link href="Assets/css/formIC/form__option.css" rel="stylesheet">
+
+        <!--Main/ Disclaimer -->
+        <link href="../Assets/css/disclaimer/disclaimer.css" rel="stylesheet">
+
+
+        <!--Footer -->
+        <link href="../Assets/css/footer/footer.css" rel="stylesheet">
+        <link href="../Assets/css/footer/footer_list.css" rel="stylesheet">
+        <link href="../Assets/css/footer/footer__list--link.css" rel="stylesheet">
+        <link href="../Assets/css/footer/fotter_copyright.css" rel="stylesheet">
+        <link href="../Assets/css/footer/footer__autor.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+        <div class="header__one"><h1 class="header__mainTitle">Calculadora Financiera</h1></div>
+        <div class="header_two"> <nav class="nav">
+            <ul class="nav__list">
+                <li class="list__item"> <a class="list__link" href="../index.html"> Interés simple</a></li>
+                <li class="list__item"> <a class="list__link" href="interesCompuesto.html" target="_top"> Interés compuesto</a></li>
+            </ul>
+        </nav></div>
+        </header>
+        <main class="main">
+            <div class="interes__title">
+                <h2 class="title">Interés Compuesto</h2>
+            </div>
+            <form class="form">
+                <div class="form__box">
+                    <h3 class="form__title">Capital</h3>
+                    <label>
+                        <input class="form__input" type="number" min="0" placeholder="Monto" autofocus data-form-capital>
+                    </label>
+                </div>
+
+                <div class="form__box">
+                    <h3 class="form__title">Plazo del prestamo</h3>
+                    <label>
+                        <input class="form__input" type="number" min="1" max="1200" placeholder="Meses" data-form-meses >
+                    </label>
+                </div>
+
+                <div class="form__box">
+                    <h3 class="form__title">Tasa de Interés Anual</h3>
+                    <label>
+                        <input class="form__input" type="number" min="0"  placeholder="% Tasa" data-form-tasa>
+                    </label>
+                </div>
+            </form>
+            <div class="form__send">
+                <form class="form__box">
+                    <h3 class="form__title">Frecuencia de capitalización</h3>
+                    <label for="selectBox"></label>
+                        <select  class="form__input" name="frecuenciaCapitalizacion" id="selectBox" required size="1"  >
+                            <option class="form__option" value="1">Anualmente</option>
+                            <option class="form__option" value="2">Semestral</option>
+                            <option class="form__option" value="3">Trimestralmente</option>
+                            <option class="form__option" value="4">Mensualmente</option>
+                            <option class="form__option" value="5" >Diariamente</option>
+                        </select>
+                </form>
+
+                <div>
+                    <h3 class="send__title">Calcular</h3>
+                    <input class="btn__send" type="submit" placeholder="Enviar">
+                </div>
+
+            </div>
+            <div class="total">
+                <h3 class="total__title">Monto total a pagar</h3>
+                <h4 class="total__monto">Total</h4>
+            </div>
+            <div class="disclaimer"><h5 class="disclaimer__message">**Para obtener un texto normal, las sustituciones aleatorias por sí solas no
+                son suficientes: se necesitan redes neuronales. Texto aleatorio para llenar sitios de prueba y diseños.</h5></div>
+        </main>
+        <footer class="footer">
+            <ul class="footer_list">
+                <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad |</a></li>
+                <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad |</a></li>
+                <li class="footer__list--item"><a class="footer__list--link" href="#">Políticas de Privacidad</a></li>
+            </ul>
+
+            <h5 class="fotter_copyright">&copy;Todos los derechos reservados, 2022, CDMX,
+                <a  class="footer__autor" href="https://www.linkedin.com/in/irvin-fernando-frias-torres-714527245/" target="_blank"
+                >Irvin
+                    Fernando
+                    Frías Torres
+                    .</a> </h5>
+
+        </footer>
+
+    </body>
+    <script type="module" src="App2.js"></script>
+
+
+
+</html>
